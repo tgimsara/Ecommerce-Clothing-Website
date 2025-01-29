@@ -61,10 +61,8 @@ function getWProduct()
 {
     global $db;
 
-    $get_products = "select * from products where cat_id=2 order by RAND() LIMIT 7";
+    $get_products = "SELECT * FROM products WHERE cat_id=2 ORDER BY RAND() LIMIT 7";
     $run_products = mysqli_query($db, $get_products);
-
-
 
     while ($row_products = mysqli_fetch_array($run_products)) {
 
@@ -73,31 +71,37 @@ function getWProduct()
         $product_price = $row_products['product_price'];
         $product_img1 = $row_products['product_img1'];
 
-
-
-
         echo "
-        
         <div class='product-item'>
-        <div class='pi-pic' style='max-height:300px'>
-            <img src='img/products/$product_img1' alt='$product_title'>
-            <ul>
-                <li class='quick-view'><a href='product.php?product_id=$products_id' style='background:#fe4231;color:white'>View Details</a></li>
-            </ul>
-        </div>
-        <div class='pi-text'>
-            <a href='product.php?product_id=$products_id'>
-                <h5>$product_title</h5>
-            </a>
-            <div class='product-price'>
-               PKR $product_price
+            <div class='pi-pic' style='max-height:300px'>
+                <img src='img/products/$product_img1' alt='$product_title'>
+                <ul>
+                    <li class='quick-view'>
+                        <a href='product.php?product_id=$products_id' style='background:#fe4231;color:white'>View Details</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='pi-text'>
+                <a href='product.php?product_id=$products_id'>
+                    <h5>$product_title</h5>
+                </a>
+                <div class='product-price'>
+                   PKR $product_price
+                </div>
+                
+                <!-- Add to Cart Button -->
+                <form action='product.php?add_cart=$products_id' method='post'>
+                    <input type='hidden' name='product_qty' value='1'>
+                    <input type='hidden' name='size' value='Medium'>
+                    <button type='submit' class='btn btn-primary pd-cart' style='margin-top: 10px;'>Add to Cart</button>
+                </form>
             </div>
         </div>
-    </div>
-
-    ";
+        ";
     }
 }
+
+
 
 // Retrieve men Products for index slider
 

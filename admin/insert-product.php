@@ -39,6 +39,7 @@ include('../db.php');
             </div>
         </div>
     </div>
+    <a href="export_orders.php" class="btn btn-success">Export Orders</a>
 
     <div class="row">
         <div class="col-lg-12">

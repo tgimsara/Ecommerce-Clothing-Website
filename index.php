@@ -62,6 +62,9 @@ include("header.php");
                             <a href='shop.php' class='primary-btn'>Shop Now</a>
                         </div>
                     </div>
+                    <div class='off-card'>
+                        <h2><s>Rs.2300</s><span>Rs.1950</span></h2>
+                    </div> 
                 </div>
             </div>";
         }
@@ -71,7 +74,7 @@ include("header.php");
     </div>
 </section>
 
-<!-- Banner Section Begin -->
+<!-- Banner Section Begin 
 
 <div class="banner-section spad">
     <div class="container-fluid">
@@ -109,7 +112,7 @@ include("header.php");
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <!-- Women Banner Section Begin -->

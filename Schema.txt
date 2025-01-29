@@ -9,7 +9,7 @@ CREATE TABLE `slider` (
 
 INSERT INTO `slider` (`slide_id`, `slide_name`, `slide_image`, `slide_heading`, `slide_text`) VALUES
 (1, 'Slide 1', 'slide_1.jpg', 'Summer Sale', 'Walk in for the Fashion, Stay in for the Style.'),
-(2, 'Slide 2', 'slide_2.jpg', 'Black friday', 'Simply Eveything You Want.');
+(2, 'Slide 2', 'slide_2.jpg', 'Crop Tee', 'SHEIN EZwear Solid Ribbed Knit');
 
 
 

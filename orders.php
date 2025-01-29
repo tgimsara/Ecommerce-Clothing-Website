@@ -28,6 +28,7 @@ if (isset($_SESSION['customer_email'])) {
                 <th>Price</th>
                 <th> Quantity</th>
                 <th>Date</th>
+
             </tr>
         </thead>
 
@@ -52,6 +53,8 @@ if (isset($_SESSION['customer_email'])) {
         <td class='first-row'>$o_qty</td>
         <td class='first-row'>
             $o_date
+        </td><td class='first-row'>
+            $o_details
         </td>
     </tr>";
     }

@@ -44,7 +44,7 @@ include("header.php");
                                 <li class="fw-normal">Subtotal <span><?php total_price(); ?></span></li>
                                 <li class="total-price">Total <span><?php total_price(); ?></span></li>
                             </ul>
-                            <form action="check-out.php" method="post">
+                            <form action="pay.php" method="post">
                                 <div class="order-btn">
                                     <a href="check-out.php?place=1" class="site-btn place-btn">Place Order</a>
                                 </div>

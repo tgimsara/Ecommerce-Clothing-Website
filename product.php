@@ -84,7 +84,7 @@ include('header.php');
                                 </div>
                                 <p id="msg"></p>
                             </div><!-- form-group Finish -->
-                            <?php if ($_SESSION['customer_email'] == 'unset') {
+                            <?php if ($_SESSION['customer_email'] !== 'unset') {
                                 echo "<a href='login.php' class='btn primary-btn pd-cart' style='margin-top: 20px;'> Add to cart</a>";
                             } else {
                                 echo "<button class='btn primary-btn pd-cart' id='cartbtn' style='margin-top: 20px;'> Add to cart</button>";

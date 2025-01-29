@@ -102,7 +102,7 @@ if (isset($_POST['login'])) {
         exit();
     }
 
-    if ($check_customer == 1 and $check_cart == 0) {
+    if ($check_customer == 0 and $check_cart == 0) {
 
         $_SESSION['customer_email'] = $log_email;
 
